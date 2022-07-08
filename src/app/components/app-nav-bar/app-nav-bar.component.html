@@ -1,0 +1,25 @@
+<nav>
+  <div class = "container">
+    <button class = "circle-button" (click) = "showCreator()">+</button>
+    <h1>Adicionar Tarefa</h1>
+  </div>
+  <div class = "task-option" (click)="displayOnly('urgent')">
+    <div class = "square red"></div>
+    <h1>Urgentes</h1>
+  </div>
+  <div class = "task-option" (click)="displayOnly('moderate')">
+    <div class = "square blue"></div>
+    <h1>Moderados</h1>
+  </div>
+  <div class = "task-option" (click)="displayOnly('itCanWait')">
+    <div class = "square green"></div>
+    <h1>Podem esperar</h1>
+  </div>
+  <div class = "task-option" (click)="displayOnly('done')">
+    <div class = "square black"></div>
+    <h1>Concluidas</h1>
+  </div>
+  <div class = "task-option all-task" (click)="displayOnly()">
+    <h1>Todas</h1>
+  </div>
+</nav>
