@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'to-do-list-final';
+  tarefas:any[]= [];//lista com os objetos
+
+  showTaskCreator!:boolean;
+  grauOfCardToDisplay!:string;
+
+  addTarefa(event:any){//evento com os objetos tarefas como parâmetro
+    this.tarefas.push(event);
+    this.showTaskCreator = false;
+  }
+  setStatus(event:boolean){
+    this.showTaskCreator = event;
+  }
+  grauToDisplay(event:string){
+    this.grauOfCardToDisplay = event;
+  }
 }
