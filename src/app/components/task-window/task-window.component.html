@@ -1,0 +1,10 @@
+<div class = "container">
+  <ng-container *ngIf="filterTheList().length > 0; else emptyList">
+    <app-card-task *ngFor = "let tarefa of filterTheList()" [tarefa] = "tarefa" (onCloseTask)="closeCard($event)" (onCheck)="checkedTask($event)" [grauOfCardToDisplay] = "grauOfCardToDisplay"></app-card-task>
+  </ng-container>
+
+  <ng-template #emptyList><!--ng-template só aparece se chamar-->
+    <h1>Tarefas não encontradas</h1>
+  </ng-template>
+</div>
+
