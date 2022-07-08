@@ -1,0 +1,42 @@
+.card-task{
+  max-width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  border: 3px solid;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-bottom: 20px;
+}
+h1, input, img{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+#checkboxTarefaConcluida{
+  width: 100px;
+}
+h1{
+  text-align: center;
+  margin: 0px;
+  font-size: 25px;
+}
+input, img{
+  cursor: pointer;
+}
+.urgent{
+  border-color: #eb344a;
+}
+.moderate{
+  border-color: #77adf9;
+}
+.itCanWait{
+  border-color: #83c683;
+}
+.done{
+  border-color: black;
+  text-decoration: line-through;
+}
+.alerta{
+  border-color: orange;
+  font-weight: bold;
+}

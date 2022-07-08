@@ -1,0 +1,6 @@
+<div class = "card-task" [ngClass]="tarefa.grau">
+  <input type = "checkbox" id = "checkboxTarefaConcluida" (click)="checked(tarefa)">
+  <h1 class = "title-task">{{ tarefa?.tarefa }}</h1>
+  <img src="assets/images/trashIcon.png" alt = "imagem de um lixeiro" (click)="goToTrash(tarefa)">
+</div>
+
