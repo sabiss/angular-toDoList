@@ -1,0 +1,16 @@
+<div class = "container-shadow">
+  <div class = "container-form">
+    <img src = "assets/images/closeIcon.png" alt = "ícone de letra X" (click)="close()">
+
+    <form (ngSubmit)="criarTarefa()">
+      <input type = "text" placeholder="Digite a Tarefa" name="tituloTarefa" [(ngModel)]="tituloTarefa"/>
+      <select [(ngModel)]="opcaoGrau" name = "opcaoGrau">
+        <option value="" disabled selected>Grau de Importância</option>
+        <option *ngFor="let grau of listaGrau" [ngValue]="grau.value">{{ grau.name }}</option>
+      </select>
+      <input type="submit">
+    </form>
+
+  </div>
+</div>
+

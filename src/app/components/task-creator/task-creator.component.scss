@@ -1,0 +1,57 @@
+.container-shadow{
+  background-color: rgba(0, 0, 0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container-form{
+  height: 300px;
+  width: 350px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+input[type="text"], select{
+  width: 220px;
+  height: 30px;
+  text-align: center;
+}
+option:nth-child(2){
+  color:#eb344a;
+}
+option:nth-child(3){
+  color:#77adf9;
+}
+option:nth-child(4){
+  color:#83c683;
+}
+option{
+  font-weight: bold;
+  text-align: center;
+}
+input[type = "submit"]{
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dd0426;
+  color:white;
+  font-weight: bold;
+}
+input[type = "submit"]:hover{
+  background-color: #cc0523;
+}
+input[type = "submit"]:active{
+  background-color: #f02140;
+}
+img:hover{
+  cursor: pointer;
+}
