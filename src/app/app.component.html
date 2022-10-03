@@ -9,6 +9,6 @@
 <body>
   <app-task-creator class="task-creator" (aoCriarTarefa)="addTarefa($event)" (onCloseTask)="setStatus($event)" *ngIf="showTaskCreator"></app-task-creator>
   <app-app-nav-bar class = "nav-bar" (statusCreator)="setStatus($event)" (displayOnlyThatCards)="grauToDisplay($event)"></app-app-nav-bar>
-  <app-task-window class = "task-window" [listaTarefas]="tarefas" [grauOfCardToDisplay] = "grauOfCardToDisplay"></app-task-window>
+  <app-task-window class = "task-window" [grauOfCardToDisplay] = "grauOfCardToDisplay"></app-task-window>
 </body>
 </html>

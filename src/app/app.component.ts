@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { TaskService } from './services/task.service';
+
 
 @Component({
   selector: 'app-root',
@@ -9,11 +11,13 @@ export class AppComponent {
   title = 'to-do-list-final';
   tarefas:any[]= [];//lista com os objetos
 
+  constructor(private service: TaskService){}
+
   showTaskCreator!:boolean;
   grauOfCardToDisplay!:string;
 
   addTarefa(event:any){//evento com os objetos tarefas como parâmetro
-    this.tarefas.push(event);
+    this.service.addTask(event)
     this.showTaskCreator = false;
   }
   setStatus(event:boolean){
